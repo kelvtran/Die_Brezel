@@ -40,8 +40,8 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero d-flex justify-content-center align-items-center" style="border: 1px solid red;">
-        <div class="hero-content container-fluid text-center" style="border: 1px solid blue;">
+    <section class="hero d-flex justify-content-center align-items-center">
+        <div class="hero-content container-fluid text-center" >
             <h1>DIE BREZEL</h1>
             <p>FÜR GSCHMÄCKLE</p>
         </div>
@@ -63,16 +63,35 @@
     </section> 
 
     <!-- Contact -->
-    <section class="contact">
-        <div class="container-fluid text-center">
+    <section class="contact d-flex flex-column align-items-center" style="border: 1px solid red;">
+        <div class="container-fluid text-center" style="border: 1px solid blue;">
             <h2>Contact</h2>
             <p>Have questions or want to get in touch? Reach out to us through our contact form or visit us at our location. We look forward to hearing from you!</p>
+        </div>
+        <!-- Form -->
+        <div class="container-fluid">
+            <h3>Contact Form</h3>
+            <form id="contact-form" action="#" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center"
             <p>&copy; 2024 Die Brezel. All rights reserved.</p>
         </div>
     </footer>

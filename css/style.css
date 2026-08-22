@@ -1,3 +1,15 @@
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    border-bottom: 1px solid grey;
+}
+
 .hero{
     height: 80vh;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    padding: 20px 0;
+    text-align: center;
 }
