@@ -2,6 +2,10 @@
     border-bottom: 1px solid grey;
 }
 
+a:first-child {
+    border-right: 1px solid black;
+}
+
 section{ 
     height: 80vh;
 }
