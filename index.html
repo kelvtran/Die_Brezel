@@ -31,7 +31,7 @@
                 
                     <!-- Language switcher - Right -->
                     <li class="nav-item d-flex">
-                        <a class="nav-link" href="index.html">EN</a>
+                        <a class="nav-link" href="index.html" id="lang-switch">EN</a>
                         <a class="nav-link" href="index-de.html">DE</a>
                     </li>
                 </ul>
@@ -40,36 +40,64 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero d-flex justify-content-center align-items-center" name="DieBrezel">
-        <div class="hero-content container-fluid text-center" >
+    <section class="hero d-flex justify-content-center align-items-center">
+        <div class="hero-content container-fluid text-center">
             <h1>DIE BREZEL</h1>
-            <p>FÜR GSCHMÄCKLE</p>
-            <p>Opening Hours: <br>Mon-Fri: 07:00 - 17:00<br>Sat-Sun: 09:00 - 15:00</p>
+            <h2>FÜR GSCHMÄCKLE</h2>
+            <br>
+            <div style="color:rgb(57, 78, 14)">   
+                <h5>WEYERTAL 24 // 50937 KÖLN</h5>
+                <br>
+                <p>Opening Hours: <br>Mon-Fri: 07:00 - 17:00<br>Sat-Sun: 09:00 - 15:00</p>
+            </div>
+            
         </div>
     </section>
 
+    
     <!-- About Us -->
-    <section class="about-us">
+    <section class="about-us d-flex flex-column justify-content-around align-items-center">
+
         <div class="container-fluid text-center">
-            <h2>About Us</h2>
-            <p>Welcome to Die Brezel, where we serve fresh German pretzels and artisanal coffee. Our cozy atmosphere is perfect for enjoying a delicious snack or a cup of coffee with friends. We take pride in our traditional recipes and high-quality ingredients, ensuring that every bite is a delightful experience. Come visit us and taste the authentic flavors of Germany!</p>
+            <h2>ABOUT US</h2>
+            <p>
+                Tucked away in the heart of Köln is your new favorite spot for fresh, authentic German pretzels and artisanal coffee.<br> 
+                Enjoy our light filled rooms, beautiful garden, cozy atmosphere, and friendly service. <br>
+                Whether you're grabbing a quick bite or looking for a place to relax, Die Brezel is the perfect destination for pretzel lovers and coffee enthusiasts alike. <br>
+            </p>
         </div>
+        
+        <div class="carousel-container">
+            <div class="carousel-item"><img src="resources/carousel-1.jpg"></div>
+            <div class="carousel-item"><img src="resources/carousel-2.jpg"></div>
+            <div class="carousel-item"><img src="resources/carousel-3.avif"></div>
+            <div class="carousel-item"><img src="resources/carousel-4.jpg"></div>
+            <div class="carousel-item"><img src="resources/carousel-5.avif"></div>
+            <div class="carousel-item"><img src="resources/carousel-6.jpg"></div>
+            <div class="carousel-item"><img src="resources/carousel-7.webp"></div>
+        </div>
+
     </section>
 
+    
+    
     <!-- Menu -->
     <section class="menu">
         <div class="container-fluid text-center">
-            <h2>Menu</h2>
+            <h2>MENU</h2>
+            <p>Serving a rotating menu of seasonal filled pretzels along with an assortment of Pastries, Soup of the Day, Pretzel of the Week along with Artisanal Coffee.</p>
+            <p>Discover our menu here!</p>
+            <button class="btn btn-primary">View Menu</button>
         </div>
     </section> 
-
+    
     <!-- Contact -->
-    <section class="contact d-flex flex-column" style="border: 1px solid red;">
+    <section class="contact d-flex flex-column">
         <div class="text-center" style="border: 1px solid blue;">
             <h2>Contact</h2>
             <p>Have questions or want to get in touch? Reach out to us through our contact form or visit us at our location. We look forward to hearing from you!</p>
         </div>
-        <div class="d-flex flex-row align-items-center" style="border: 1px solid orange;">
+        <div class="container-xxl d-flex flex-row align-items-center" style="border: 1px solid orange;">
             <!-- Map -->
              <div class="map-container" style="border: 1px solid green;">
                 <h1>  Map</h1>
@@ -100,12 +128,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid text-center">
-            <p>&copy; 2024 Die Brezel. All rights reserved.</p>
+            <p>&copy; 2026 Die Brezel. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
 </body>
 </html>
