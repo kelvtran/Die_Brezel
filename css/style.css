@@ -1,5 +1,3 @@
-
-
 .navbar.navbar-expand-lg.bg-body-tertiary {
     border-bottom: 1px solid grey; 
 }
@@ -19,6 +17,16 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: 100%;
+    /* Firefox: Completely hides the scrollbar */
+    scrollbar-width: none; 
+    
+    /* IE and Edge (Legacy): Completely hides the scrollbar */
+    -ms-overflow-style: none; 
+}
+
+/* Chrome, Safari, Edge, and Opera: Hides the scrollbar */
+.carousel-container::-webkit-scrollbar {
+    display: none;
 }
 
 .carousel-item-custom {
@@ -28,6 +36,7 @@
     margin: 20px;
     border-radius: 20px; 
     overflow-x: hidden;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item-custom img {
