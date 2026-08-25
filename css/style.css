@@ -1,3 +1,8 @@
+h5, p , .menu ul {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+}
+
 .navbar.navbar-expand-lg.bg-body-tertiary {
     border-bottom: 1px solid grey; 
 }
@@ -54,13 +59,26 @@
     height: 80vh;
 }
 
+.menu {
+    background-color: rgb(57, 78, 14);
+    color: white;
+}
 
+.btn:hover {
+    background-color: rgb(195, 201, 151) !important; 
+    color: rgb(57, 78, 14) !important;
+    border: 2px solid rgb(41, 56, 9)!important;
+}
+
+.menu {
+    color:blanchedalmond;
+}
 
 
 .footer{
-    background-color: black;
-    color: white;
-    height: 20vh;
+    border-top: 1px solid grey;
+    color: black;
+    height: 10vh;
     padding: 20px 0;
     text-align: center;
 }
