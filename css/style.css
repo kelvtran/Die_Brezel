@@ -55,9 +55,10 @@ h5, p , .menu ul {
 }
 
 
-.menu, .contact {
+.menu {
     height: 80vh;
 }
+
 
 .menu {
     background-color: rgb(57, 78, 14);
@@ -74,11 +75,34 @@ h5, p , .menu ul {
     color:blanchedalmond;
 }
 
+.contact {
+    min-height: 85dvh; /* Dynamic viewport height - adjusts for mobile UI */
+}
+
+/* On mobile, let it grow naturally if content is taller */
+@media (max-width: 768px) {
+    .contact {
+        min-height: auto;
+    }
+}
+
+/* Make map smaller on mobile to prevent overflow */
+@media (max-width: 992px) {
+    .map-container iframe {
+        min-height: 200px !important;
+    }
+}
+    
+@media (max-width: 576px) {
+    .map-container iframe {
+        min-height: 180px !important;
+    }
+}
+    
 
 .footer{
     border-top: 1px solid grey;
     color: black;
-    height: 10vh;
     padding: 20px 0;
     text-align: center;
 }

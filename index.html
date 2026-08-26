@@ -99,8 +99,10 @@
     </section> 
     
     <!-- Contact -->
+    
     <section class="contact d-flex flex-column justify-content-around align-items-center" 
-            style="border: 1px solid rgb(195, 201, 151); margin: 10px; padding:20px;">
+         style="border: 1px solid rgb(195, 201, 151); margin: 10px; padding:20px;">
+    
         <div class="text-center">
             <h2>CONTACT US</h2>
             <p>Questions, feedback, bookings or other enquiries? 
@@ -108,38 +110,54 @@
                 <br>We look forward to hearing from you!
             </p>
         </div>
-        
-        <div class="container-xxl d-flex flex-row align-items-center">
-            <!-- Map -->
-             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019123456789!2d-122.419415484681!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b5b5b%3A0x123456789abcdef0!2sDie%20Brezel%20Location!5e0!3m2!1sen!2sus!4v1610000000000" 
-                    width="600" height="450" style="border:2px solid rgb(195, 201, 151); border-radius:5px;" allowfullscreen="" loading="lazy"></iframe>
-             </div>
-            <!-- Form -->
-            <div class="container-xxl">
-                <form>
-                    <div class="mb-3">
-                        <label for="topic" class="form-label">Topic</label>
-                        <input type="text" class="form-control" id="topic" >
-                        <div id="topic-error" style="height:5px; color:red; font-size:14px;"></div>
+    
+
+        <div class="container-xxl">
+            <div class="row g-4 align-items-stretch">
+            
+                <!-- Map - full width on mobile, half on large screens -->
+                <div class="col-12 col-lg-6">
+                    <div class="map-container h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019123456789!2d-122.419415484681!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b5b5b%3A0x123456789abcdef0!2sDie%20Brezel%20Location!5e0!3m2!1sen!2sus!4v1610000000000" 
+                            class="w-100" 
+                            style="border:2px solid rgb(195, 201, 151); border-radius:5px; min-height: 300px; height: 100%;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
                     </div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" >
-                        <div id="name-error" style="height:5px; color:red; font-size:14px;"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" >
-                        <div id="email-error" style="height:5px; color:red; font-size:14px;"></div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email-content" class="form-label">Message</label>
-                        <textarea class="form-control" id="email-content" rows="4" style="resize:none;" 
+                </div>
+            
+                <!-- Form - full width on mobile, half on large screens -->
+                <div class="col-12 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="topic" class="form-label">Topic</label>
+                            <input type="text" class="form-control" id="topic">
+                            <div id="topic-error" style="height:5px; color:red; font-size:14px;"></div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                            <div id="name-error" style="height:5px; color:red; font-size:14px;"></div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="email-error" style="height:5px; color:red; font-size:14px;"></div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email-content" class="form-label">Message</label>
+                            <textarea class="form-control" id="email-content" rows="4" 
+                                style="resize:none;" 
                                 placeholder="Please enter your message."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
-                </form>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
