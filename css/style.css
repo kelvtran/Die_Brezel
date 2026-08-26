@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+h5, p , .menu ul {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    border-bottom: 1px solid grey; 
+}
+
+
+#lang-switch {
+    border-right: 1px solid black;
+}
+
+.about-us {
+    min-height: 100vh; 
+}
+
+/* CAROUSEL */
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    /* Firefox: Completely hides the scrollbar */
+    scrollbar-width: none; 
+    
+    /* IE and Edge (Legacy): Completely hides the scrollbar */
+    -ms-overflow-style: none; 
+}
+
+/* Chrome, Safari, Edge, and Opera: Hides the scrollbar */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item-custom {
+    flex: 0 0 auto;
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px; 
+    overflow-x: hidden;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item-custom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero {
+    height: 93vh;
+}
+
+
+.menu {
+    height: 80vh;
+}
+
+
+.menu {
+    background-color: rgb(57, 78, 14);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(195, 201, 151) !important; 
+    color: rgb(57, 78, 14) !important;
+    border: 2px solid rgb(41, 56, 9)!important;
+}
+
+.menu {
+    color:blanchedalmond;
+}
+
+.contact {
+    min-height: 85dvh; /* Dynamic viewport height - adjusts for mobile UI */
+}
+
+/* On mobile, let it grow naturally if content is taller */
+@media (max-width: 768px) {
+    .contact {
+        min-height: auto;
+    }
+}
+
+/* Make map smaller on mobile to prevent overflow */
+@media (max-width: 992px) {
+    .map-container iframe {
+        min-height: 200px !important;
+    }
+}
+    
+@media (max-width: 576px) {
+    .map-container iframe {
+        min-height: 180px !important;
+    }
+}
+    
+
+.footer{
+    border-top: 1px solid grey;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
