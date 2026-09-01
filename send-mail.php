@@ -8,12 +8,15 @@
         $email= $_POST['email'];
         $message= $_POST['message'];
 
+        $emailFromEnv = getenv('EMAIL');
+        $emailPasswordFromEnv = getenv('EMAIL_PW');
+
         $mail = new PHPMailer\PHPMailer\PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'your_email@example.com';
-        $mail->Password = 'your_password';
+        $mail->Username = $emailFromEnv;
+        $mail->Password = $emailPasswordFromEnv;
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
