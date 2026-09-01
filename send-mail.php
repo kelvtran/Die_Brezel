@@ -9,7 +9,7 @@
     if ($_SERVER['REQUEST_METHOD'] =='POST') {
         $topic = $_POST['topic'];
         $name= $_POST['name'];
-        $email= $_POST['email'];
+        $senderEmail= $_POST['email'];
         $message= $_POST['email-content'];
 
         $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -21,11 +21,11 @@
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom($email, $name); // Set the sender of the email to the user's email and name
+        $mail->setFrom($senderEmail, $name); // Set the sender of the email to the user's email and name
         $mail->addAddress($_ENV['EMAIL']); // Our email
-        $mail->addReplyTo($email, $name);
+        $mail->addReplyTo($senderEmail, $name);
         $mail->Subject = $topic;
-        $mail->Body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+        $mail->Body = "Name: $name\nEmail: $senderEmail\n\nMessage:\n$message";
 
         if(!$mail->send()) {
             echo 'Message could not be sent.';
