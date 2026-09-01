@@ -1,0 +1,12 @@
+{
+    "name": "kelvintran/die-brezel",
+    "require": {
+        "phpmailer/phpmailer": "^7.1"
+    },
+    "authors": [
+        {
+            "name": "Kelvin Tran",
+            "email": "kelvin.tran699@gmail.com"
+        }
+    ]
+}
