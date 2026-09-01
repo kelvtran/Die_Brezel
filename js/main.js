@@ -123,12 +123,8 @@ document.getElementById('submit-button').addEventListener('click', function(even
         document.getElementById('email-error').textContent = '';
     }
 
-
-    // You can now use these values to send an email or perform other actions
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Topic:', topic);
-    console.log('Content:', content);
+    // If all validations pass, submit the form
+    document.querySelector('form').submit();
 
 
 });

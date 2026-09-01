@@ -133,25 +133,25 @@
                     <form action="send-mail.php" method="POST">
                         <div class="mb-3">
                             <label for="topic" class="form-label">Topic</label>
-                            <input type="text" class="form-control" id="topic">
+                            <input type="text" class="form-control" id="topic" name="topic">
                             <div id="topic-error" style="height:5px; color:red; font-size:14px;"></div>
                         </div>
                     
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name="name">
                             <div id="name-error" style="height:5px; color:red; font-size:14px;"></div>
                         </div>
                     
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                             <div id="email-error" style="height:5px; color:red; font-size:14px;"></div>
                         </div>
                     
                         <div class="mb-3">
                             <label for="email-content" class="form-label">Message</label>
-                            <textarea class="form-control" id="email-content" rows="4" 
+                            <textarea class="form-control" id="email-content" name="email-content" rows="4" 
                                 style="resize:none;" 
                                 placeholder="Please enter your message."></textarea>
                         </div>

@@ -6,24 +6,24 @@
         $topic = $_POST['topic'];
         $name= $_POST['name'];
         $email= $_POST['email'];
-        $message= $_POST['message'];
+        $message= $_POST['email-content'];
 
-        $emailFromEnv = getenv('EMAIL');
+        $storeEmail = getenv('EMAIL');
         $emailPasswordFromEnv = getenv('EMAIL_PW');
 
         $mail = new PHPMailer\PHPMailer\PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = $emailFromEnv;
+        $mail->Username = $storeEmail;
         $mail->Password = $emailPasswordFromEnv;
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom($email, $name);
-        $mail->addAddress('recipient@example.com');
+        $mail->setFrom($email, 'Die Brezel Contact Form');
+        $mail->addAddress($storeEmail);
         $mail->Subject = $topic;
-        $mail->Body = $message;
+        $mail->Body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
         if(!$mail->send()) {
             echo 'Message could not be sent.';
