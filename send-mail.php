@@ -42,6 +42,7 @@
             $mail->Body = "Dear $name,\n\nThank you for contacting us. We will get back to you soon.\n\nYour message:\n$message";
             $mail->send();
 
+            // Add confirmation message to the user
 
         }
 
