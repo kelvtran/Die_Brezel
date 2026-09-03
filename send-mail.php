@@ -35,13 +35,14 @@
             die();
         } else {
             // Send confirmation message to the user
+            // Comment this out if you dont think its necessary.
             $mail->clearAddresses();
             $mail->addAddress($senderEmail, $name);
             $mail->Subject = "Confirmation: $topic";
             $mail->Body = "Dear $name,\n\nThank you for contacting us. We will get back to you soon.\n\nYour message:\n$message";
             $mail->send();
 
-            
+
         }
 
     }
