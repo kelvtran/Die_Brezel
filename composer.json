@@ -1,0 +1,13 @@
+{
+    "name": "kelvintran/die-brezel",
+    "require": {
+        "phpmailer/phpmailer": "^7.1",
+        "vlucas/phpdotenv": "^5.7"
+    },
+    "authors": [
+        {
+            "name": "Kelvin Tran",
+            "email": "kelvin.tran699@gmail.com"
+        }
+    ]
+}
