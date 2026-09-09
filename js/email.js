@@ -12,7 +12,6 @@ form.addEventListener('submit', function(event) {
     // Show loading state
     submitButton.disabled = true;
     submitButton.textContent = 'Sending...';
-    messageDiv.style.display = 'none';
         
     // Get form data
     const formData = new FormData(form);
@@ -28,7 +27,6 @@ form.addEventListener('submit', function(event) {
     .then(data => {
             
         // Show message
-        messageDiv.style.display = 'block';
             
             if (data.success) {
                 messageDiv.style.backgroundColor = '#d4edda';
@@ -47,9 +45,6 @@ form.addEventListener('submit', function(event) {
         submitButton.textContent = 'Submit';
     })
     .catch(error => {
-        console.error('❌ Error:', error);
-            
-        messageDiv.style.display = 'block';
         messageDiv.style.backgroundColor = '#f8d7da';
         messageDiv.style.color = '#721c24';
         messageDiv.style.border = '1px solid #f5c6cb';
