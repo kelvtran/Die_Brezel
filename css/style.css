@@ -2,8 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-section[id] {
-    scroll-margin-top: 70px; /* or your navbar height */
+#DieBrezel{
+    scroll-margin-top: 70px;
+}
+
+#aboutus{
+    scroll-margin-top: 55px;
 }
 
 h5, p , .menu ul {
