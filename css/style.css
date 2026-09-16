@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+}
+
+section[id] {
+    scroll-margin-top: 70px; /* or your navbar height */
 }
 
 h5, p , .menu ul {
