@@ -22,11 +22,22 @@ lastClones.reverse().forEach(clone => {
 
 let isJumping = false;
 
-// Wait for images/layout to load, then start at original images
+// Wait for images/layout to load, then center the 3rd original image
 window.addEventListener("load", () => {
     const originalWidth = getOriginalWidth();
-
-    carousel.scrollLeft = originalWidth;
+    const items = carousel.querySelectorAll(".carousel-item-custom");
+    
+    // The 3rd original image is at index (originalItems.length + 2) because of the clones at the start
+    const thirdItem = items[originalItems.length + 2];
+    if (thirdItem) {
+        const itemOffset = thirdItem.offsetLeft;
+        const itemWidth = thirdItem.offsetWidth;
+        const containerWidth = carousel.offsetWidth;
+        
+        carousel.scrollLeft = itemOffset - (containerWidth / 2) + (itemWidth / 2);
+    } else {
+        carousel.scrollLeft = originalWidth;
+    }
 });
 
 function getOriginalWidth() {
